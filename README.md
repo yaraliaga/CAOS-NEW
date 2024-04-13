@@ -2,10 +2,10 @@ CAOS News
 
 Programación Web
 
-Autores:
-Yarod Aliaga
-Christian Andrade
-Martín Sepúlveda
+Autores:<br>
+Yarod Aliaga<br>
+Christian Andrade<br>
+Martín Sepúlveda<br>
 
-Profesor:
+Profesor:<br>
 Ignacio Cuturrufo
