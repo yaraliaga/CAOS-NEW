@@ -1,0 +1,107 @@
+/* Estilos generales */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+
+.content {
+    flex: 1;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+nav{
+
+    margin-bottom: 40px;
+}
+
+
+/* Estilos index*/
+.titulos{
+    font-style: italic;
+    text-align: center;
+    margin: 26px
+}
+#carouselExampleCaptions {
+    max-width: 1000px; 
+    margin: auto; 
+}
+
+.carousel-item img {
+    max-height: 500px; 
+    object-fit: cover;
+}
+
+h5{
+    background-color: rgba(0, 0, 0, 0.644);
+    display: inline-block;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.navbar-nav{
+    padding-right: 8px;
+    margin-bottom: 18px;
+
+}
+
+/* Estilos quienes somos */
+.cargos, .nombres {
+    text-align: center; /* Centra el texto */
+}
+
+#separator{
+    margin: 24px 0px 24px 0px;
+}
+
+.cargos{
+    margin-top: 28px; 
+    margin-bottom: 10px; 
+    font-style: italic;
+}
+
+/* Estilos para los títulos de los planes */
+.card-title {
+    background-color: transparent; /* Quita el color de fondo */
+}
+
+
+
+/* Estilos para el botón "Suscribirse" */
+
+
+
+/* Estilo Noticia*/
+
+.titular{
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+.sub{
+    color: black;
+    font-weight: bold;
+}
+
+.noticia{
+    padding-right: 180px;
+}
+
+/* Estilos footer */
+.footer {
+    
+    background-color: #343a40; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px 0;
+    font-size: x-small; 
+}
+
