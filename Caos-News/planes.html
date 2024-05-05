@@ -82,16 +82,16 @@
             <div class="form-group">
               <label for="exampleInputEmail1">Correo electrónico</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email" required>
+                placeholder="Ingresar email" required>
               <div class="invalid-feedback">
                 Por favor ingrese un correo válido
               </div>
-              <small id="emailHelp" class="form-text text-muted">Su correo electrónico no será
-                compartido</small>
             </div>
+            <br>
             <div class="form-group">
               <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña"
+                required>
               <div class="invalid-feedback">
                 Por favor ingrese su contraseña
               </div>
@@ -114,18 +114,38 @@
         <div class="modal-body">
           <form class="needs-validation" novalidate>
             <div class="form-group">
+              <label for="exampleInputName">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp"
+                placeholder="Ingresar nombre" required>
+              <div class="invalid-feedback">
+                Por favor ingrese su nombre
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputLastName">Apellido</label>
+              <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="lastNameHelp"
+                placeholder="Ingresar apellido" required>
+              <div class="invalid-feedback">
+                Por favor ingrese su apellido
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
               <label for="exampleInputEmail1">Correo electrónico</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email" required>
+                placeholder="Ingresar email" required>
               <div class="invalid-feedback">
                 Por favor ingrese un correo válido
               </div>
-              <small id="emailHelp" class="form-text text-muted">Su correo electrónico no será
-                compartido</small>
+              <small id="emailHelp" class="form-text text-muted">Su correo electrónico no será compartido</small>
             </div>
+            <br>
             <div class="form-group">
               <label for="exampleInputPassword1">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña"
+                required>
               <div class="invalid-feedback">
                 Por favor ingrese su contraseña
               </div>
@@ -136,6 +156,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -155,9 +176,9 @@
                 <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">
                   Suscribirse
                 </button>
-                 <!-- Carro compras Básico -->
-                <div class="modal fade" id="cartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
+                <!-- Carro compras Básico -->
+                <div class="modal fade" id="cartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header border-bottom-0">
@@ -210,9 +231,9 @@
               <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cartModal2">
                 Suscribirse
               </button>
-               <!-- Carro compras Estándar -->
-              <div class="modal fade" id="cartModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
+              <!-- Carro compras Estándar -->
+              <div class="modal fade" id="cartModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header border-bottom-0">
@@ -255,80 +276,83 @@
             </div>
           </div>
         </div>
-    <div class="col-md-4">
-      <!-- Plan de suscripción derecho -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Plan Premium</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cartModal3">
-            Suscribirse
-          </button>
-           <!-- Carro compras premium-->
-          <div class="modal fade" id="cartModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                  <h4 class="modal-title" id="exampleModalLabel">
-                    Detalle Compra
-                  </h4>
-                </div>
-                <div class="modal-body">
-                  <table class="table table-image">
-                    <thead>
-                      <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Duración</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="w-25">
-                          <img src="img/Premium.png" class="img-fluid img-thumbnail" alt="Sheep">
-                        </td>
-                        <td>Plan Premium</td>
-                        <td>$25.990</td>
-                        <td>Anual</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="d-flex justify-content-end">
-                    <h4>Total: <span class="price text-success">$25.990</span></h4>
+        <div class="col-md-4">
+          <!-- Plan de suscripción derecho -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Plan Premium</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cartModal3">
+                Suscribirse
+              </button>
+              <!-- Carro compras premium-->
+              <div class="modal fade" id="cartModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                      <h4 class="modal-title" id="exampleModalLabel">
+                        Detalle Compra
+                      </h4>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-image">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Duración</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="w-25">
+                              <img src="img/Premium.png" class="img-fluid img-thumbnail" alt="Sheep">
+                            </td>
+                            <td>Plan Premium</td>
+                            <td>$25.990</td>
+                            <td>Anual</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="d-flex justify-content-end">
+                        <h4>Total: <span class="price text-success">$25.990</span></h4>
+                      </div>
+                    </div>
+                    <div class="modal-footer border-top-0 d-flex justify-content-between">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-danger">Checkout</button>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-footer border-top-0 d-flex justify-content-between">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-danger">Checkout</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Popover Título de despedida -->
+      <div class="text-center my-5">
+        <h2 class="titulos">¡Gracias por considerarnos!</h2>
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+          data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true"
+          data-bs-content="Para más información, diríjase a nuestro <a href='quienes_somos.html#contacto'>formulario de contacto</a>">
+          ¿Necesitas ayuda? ¡Haz click aquí!
+        </button>
+
+        <!-- Inicialización del popover -->
+        <script>
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+          var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+
+          });
+
+        </script>
+
+      </div>
     </div>
-  </div>
-
-  <!-- Título de despedida -->
-  <div class="text-center my-5">
-    <h2 class="titulos">¡Gracias por considerarnos!</h2>
-    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-      data-bs-placement="bottom" data-bs-content="Era broma">
-      ¿Necesitas ayuda? ¡Haz click aquí!
-    </button>
-
-    <!-- Inicialización del popover -->
-    <script>
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl);
-      });
-    </script>
-
-  </div>
-  </div>
   </div>
 
 

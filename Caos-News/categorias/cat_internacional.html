@@ -15,6 +15,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    
+      <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
@@ -65,6 +67,98 @@
     </div>
   </nav>
 
+
+  <!-- Modal para iniciar sesión -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="/img/logopeque.png" alt="pequeño logo" width="50"> Iniciar Sesión
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Ingresar email" required>
+              <div class="invalid-feedback">
+                Por favor ingrese un correo válido
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña"
+                required>
+              <div class="invalid-feedback">
+                Por favor ingrese su contraseña
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para registrarse-->
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="/img/logopeque.png" alt="pequeño logo" width="50">Registrarse
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="exampleInputName">Nombre</label>
+              <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp"
+                placeholder="Ingresar nombre" required>
+              <div class="invalid-feedback">
+                Por favor ingrese su nombre
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputLastName">Apellido</label>
+              <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="lastNameHelp"
+                placeholder="Ingresar apellido" required>
+              <div class="invalid-feedback">
+                Por favor ingrese su apellido
+              </div>
+            </div>
+            <br>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Ingresar email" required>
+              <div class="invalid-feedback">
+                Por favor ingrese un correo válido
+              </div>
+              <small id="emailHelp" class="form-text text-muted">Su correo electrónico no será compartido</small>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña"
+                required>
+              <div class="invalid-feedback">
+                Por favor ingrese su contraseña
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <div class="content">
     <h1 class="titulos">INTERNACIONAL</h1>
     <div class="container">
@@ -72,7 +166,8 @@
         <!-- Primera tarjeta -->
         <div class="col mb-3">
           <div class="card">
-            <img src="https://www.cooperativa.cl/noticias/site/artic/20240406/imag/foto_0000000120240406215211.jpg" class="card-img-top" alt="inter_1">
+            <img src="https://www.cooperativa.cl/noticias/site/artic/20240406/imag/foto_0000000120240406215211.jpg"
+              class="card-img-top" alt="inter_1">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
@@ -82,7 +177,8 @@
         <!-- Segunda tarjeta -->
         <div class="col mb-3">
           <div class="card">
-            <img src="https://www.cooperativa.cl/noticias/site/artic/20240406/imag/foto_0000000120240406201216.jpg" class="card-img-top" alt="inter_2">
+            <img src="https://www.cooperativa.cl/noticias/site/artic/20240406/imag/foto_0000000120240406201216.jpg"
+              class="card-img-top" alt="inter_2">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
@@ -92,7 +188,8 @@
         <!-- Tercera tarjeta -->
         <div class="col mb-3">
           <div class="card">
-            <img src="https://www.cooperativa.cl/noticias/site/artic/20240403/imag/foto_0000000120240403203216.jpg" class="card-img-top" alt="inter_3">
+            <img src="https://www.cooperativa.cl/noticias/site/artic/20240403/imag/foto_0000000120240403203216.jpg"
+              class="card-img-top" alt="inter_3">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
@@ -102,7 +199,8 @@
         <!-- Cuarta tarjeta -->
         <div class="col mb-3">
           <div class="card">
-            <img src="https://www.cooperativa.cl/noticias/site/artic/20240406/imag/foto_0000000120240406101016.jpg" class="card-img-top" alt="inter_4">
+            <img src="https://www.cooperativa.cl/noticias/site/artic/20240406/imag/foto_0000000120240406101016.jpg"
+              class="card-img-top" alt="inter_4">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
@@ -112,7 +210,8 @@
         <!-- Quinta tarjeta -->
         <div class="col mb-3">
           <div class="card">
-            <img src="https://www.cooperativa.cl/noticias/site/artic/20240407/imag/foto_0000000120240407141455.png" class="card-img-top" alt="inter_5">
+            <img src="https://www.cooperativa.cl/noticias/site/artic/20240407/imag/foto_0000000120240407141455.png"
+              class="card-img-top" alt="inter_5">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
@@ -122,7 +221,8 @@
         <!-- Sexta tarjeta -->
         <div class="col mb-3">
           <div class="card">
-            <img src="https://www.cooperativa.cl/noticias/site/artic/20240407/imag/foto_0000000420240407094858.jpg" class="card-img-top" alt="inter_6">
+            <img src="https://www.cooperativa.cl/noticias/site/artic/20240407/imag/foto_0000000420240407094858.jpg"
+              class="card-img-top" alt="inter_6">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>

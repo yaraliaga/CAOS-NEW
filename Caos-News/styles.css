@@ -105,3 +105,18 @@ h5{
     font-size: x-small; 
 }
 
+/* Estilo API Clima */
+
+.api-clima{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    
+}
