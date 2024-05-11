@@ -71,6 +71,97 @@
             </div>
         </div>
     </nav>
+
+    <!-- Modal para iniciar sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="/img/logopeque.png" alt="pequeño logo" width="50"> Iniciar Sesión
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ingresar email" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un correo válido
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ingresar contraseña" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su contraseña
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para registrarse-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="/img/logopeque.png" alt="pequeño logo" width="50">Registrarse
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="exampleInputName">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputName"
+                                aria-describedby="nameHelp" placeholder="Ingresar nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su nombre
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleInputLastName">Apellido</label>
+                            <input type="text" class="form-control" id="exampleInputLastName"
+                                aria-describedby="lastNameHelp" placeholder="Ingresar apellido" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su apellido
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo electrónico</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ingresar email" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un correo válido
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">Su correo electrónico no será
+                                compartido</small>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Ingresar contraseña" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su contraseña
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
     <div class="content">
         <!-- NOTICIAS DESTACADAS -->
@@ -134,96 +225,7 @@
 
 
 
-        <!-- Modal para iniciar sesión -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="/img/logopeque.png" alt="pequeño logo" width="50"> Iniciar Sesión
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="needs-validation" novalidate>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Correo electrónico</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Ingresar email" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingrese un correo válido
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Ingresar contraseña" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingrese su contraseña
-                                </div>
-                            </div>
-                            <br>
-                            <button type="submit" class="btn btn-primary">Ingresar</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal para registrarse-->
-        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="/img/logopeque.png" alt="pequeño logo" width="50">Registrarse
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="needs-validation" novalidate>
-                            <div class="form-group">
-                                <label for="exampleInputName">Nombre</label>
-                                <input type="text" class="form-control" id="exampleInputName"
-                                    aria-describedby="nameHelp" placeholder="Ingresar nombre" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingrese su nombre
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleInputLastName">Apellido</label>
-                                <input type="text" class="form-control" id="exampleInputLastName"
-                                    aria-describedby="lastNameHelp" placeholder="Ingresar apellido" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingrese su apellido
-                                </div>
-                            </div>
-                            <br>
-
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Correo electrónico</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Ingresar email" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingrese un correo válido
-                                </div>
-                                <small id="emailHelp" class="form-text text-muted">Su correo electrónico no será
-                                    compartido</small>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Ingresar contraseña" required>
-                                <div class="invalid-feedback">
-                                    Por favor ingrese su contraseña
-                                </div>
-                            </div>
-                            <br>
-                            <button type="submit" class="btn btn-primary">Registrarse</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
 

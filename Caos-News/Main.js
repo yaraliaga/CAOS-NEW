@@ -1,5 +1,12 @@
 (function () {
 
+
+
+//Header y footer dinámico
+//const footer = document.querySelector(footer);
+//footer.innerHTML =
+
+
 //Función modal login y registro
 
   'use strict';
@@ -38,7 +45,7 @@
             weatherIcon.alt = description;
             weatherIcon.style.display = 'block'; // Muestra la imagen
           } else {
-            console.error('Invalid weather data:', data);
+            console.error('Datos inválidos de clima:', data);
           }
         })
         .catch(error => {
@@ -50,6 +57,12 @@
 
 
   }, false);
+
+
+
+
+
+
 
 })();
 
