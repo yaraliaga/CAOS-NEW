@@ -2,8 +2,7 @@
 
 
 
-    //Header y footer dinámico
-    const header = document.querySelector("header");
+    //Header y footer constantes
     const footer = document.querySelector("footer");
     
     // Header Dinámico
