@@ -132,3 +132,10 @@ h5 {
 #map {
     height: 180px;
 }
+
+.navbar-shrink {
+    background-color: #fff; /* Cambiar al color deseado */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Sombra ligera para mejor visibilidad */
+    padding: 5px 0; /* Reducir padding */
+    transition: all 0.5s; /* Transición suave */
+  }
