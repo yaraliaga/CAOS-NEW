@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="Main.js"></script>
- 
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -17,10 +17,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <!-- NOTICIAS DESTACADAS -->
+    <!-- NOTICIAS DESTACADAS -->
+    <!-- CARRUSEL -->
+    <br>
+    <div class="container">
         <h1 class="titulos">NOTICIAS DESTACADAS</h1>
-        <!-- CARRUSEL -->
-        <br>
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -33,7 +34,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="/noticia_carrusel_1.html">
-                        <img src="/img/sonic.png" class="d-block w-100" alt="Sonic el erizo">
+                        <img src="/img/SonicNew.jpg" class="d-block w-100" alt="Sonic el erizo">
                     </a>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Carrusel 1</h5>
@@ -68,19 +69,20 @@
             </button>
         </div>
         <br>
-        
+
         <!--API CLIMA-->
         <div class="api-clima">
-        <h1 class="titulos">EL TIEMPO AHORA</h1>
-        <img id="icono-clima" src="" alt="" style="display: none;">
-        <div id="clima"></div>
-    </div>     
+            <h1>EL TIEMPO AHORA</h1>
+            <img id="icono-clima" src="" alt="" style="display: none;">
+            <div id="clima"></div>
+        </div>
     </div>
+    
     <footer>
         <div id="footer-container"></div>
     </footer>
 
-    <script src="dynamicContent.js"></script> <!-- JavaScript para llamar dinámicos-->
+    <script src="/Dinámicos.js"></script> <!-- JavaScript para llamar dinámicos-->
 </body>
 
 </html>

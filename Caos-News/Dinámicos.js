@@ -27,7 +27,7 @@
                               <li><a class="dropdown-item" href="/categorias/cat_politica.html">Política</a></li>
                               <li><a class="dropdown-item" href="/categorias/cat_deportes.html">Deporte</a></li>
                               <li><a class="dropdown-item" href="/categorias/cat_internacional.html">Internacional</a></li>
-                              <li><a class="dropdown-item" href="/categorias/">Economía</a></li>
+                              <li><a class="dropdown-item" href="/categorias/cat_economia.html">Economía</a></li>
                           </ul>
                       </li>
                       <li class="nav-item">
