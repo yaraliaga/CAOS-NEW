@@ -29,7 +29,7 @@
           const description = data.weather[0].description;
           const weatherIcon = document.getElementById('icono-clima');
           const iconCode = data.weather[0].icon;
-          const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
+          const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
           weatherDiv.innerHTML = `<p>La temperatura en Valparaíso es ${temperature.toFixed(1)}°C con ${description}.</p>`;
           weatherIcon.src = iconUrl;
@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
                   const horaDiv = document.getElementById(timezone.id);
                   const hora = new Date(data.datetime);
                   const formattedTime = hora.toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-                  horaDiv.innerHTML = `<p>${formattedTime}</p>`;
+                  const formattedDate = hora.toLocaleDateString('es-CL', { year: 'numeric', month: 'long', day: 'numeric' });
+                  horaDiv.innerHTML = `<p>${formattedDate}</p><p>${formattedTime}</p>`;
               } else {
                   console.error('Datos inválidos de hora:', data);
               }
@@ -79,3 +80,4 @@ document.addEventListener('DOMContentLoaded', function () {
   obtenerHora();
   setInterval(obtenerHora, 1000); // Actualizar cada 5 segundos
 });
+

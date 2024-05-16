@@ -186,15 +186,6 @@
       var navbar = document.querySelector(".navbar");
       var navbarBrand = document.querySelector(".navbar-brand img");
     
-      function adjustNavbar() {
-        if (window.pageYOffset > 100) {
-          navbar.classList.add("navbar-shrink");
-          navbarBrand.style.height = "60px"; // Cambiar el tamaño del logo
-        } else {
-          navbar.classList.remove("navbar-shrink");
-          navbarBrand.style.height = "80px"; // Tamaño original del logo
-        }
-      }
     
       // Añadir la clase y ajustar el tamaño del logo al hacer scroll
       window.addEventListener("scroll", adjustNavbar);

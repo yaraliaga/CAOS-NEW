@@ -8,14 +8,11 @@ body {
 }
 
 .container {
-    flex: 1;  /* Esto hace que el contenedor tome todo el espacio disponible, empujando el footer hacia abajo */
-    flex-direction: column;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content {
-    flex: 1;
     flex-direction: column;
     margin-bottom: 50px;
     margin-top: 115px;
@@ -31,7 +28,7 @@ body {
 
 /* Estilos index y carrusel */
 .carousel {
-    max-width: 80%; /* Reducido de 90% a 80% para dar más espacio al margen izquierdo */
+    max-width: 100%; /* Reducido de 90% a 80% para dar más espacio al margen izquierdo */
     height: 500px; /* Altura fija */
     margin: 50px auto 0 auto; /* Ajuste en márgenes para centrar correctamente */
 }
@@ -139,15 +136,20 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centrar contenido horizontalmente */
+    
 }
 
 #chile-icon {
     margin-bottom: 1rem; /* Espacio entre la imagen y la hora */
+    max-width: 100%;
+    height: auto;
 }
 
 #hora-santiago {
-    font-size: 2rem; /* Tamaño grande para la hora */
+    font-size: larger; /* Tamaño grande para la hora */
     font-weight: bold; /* Negrita */
     text-align: center; /* Centrar el texto */
     margin: 0.5rem 0; /* Márgenes superiores e inferiores */
 }
+
+
